@@ -1,7 +1,7 @@
 pipeline {
   environment {
     registry = "muhammadadel612/newnginx"
-    registryCredential = 'dockerhub'
+    registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
   agent any
