@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "muhammadadel8/newnginx"
+    registry = "muhammadadel8/nginx-alpine"
     registryCredential = 'dockerhub_id'
     dockerImage = ''
   }
