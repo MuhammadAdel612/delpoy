@@ -1,11 +1,16 @@
 pipeline {
   environment {
-    registry = "muhammadadel8/newnginx"
+    registry = "muhammadadel612/newnginx"
     registryCredential = 'dockerhub'
     dockerImage = ''
   }
   agent any
   stages {
+    stage('Cloning Git') {
+      steps {
+        git 'https://github.com/MuhammadAdel612/delpoy.git'
+      }
+    }
     stage('Building image') {
       steps{
         script {
