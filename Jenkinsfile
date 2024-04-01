@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/MuhammadAdel612/delpoy.git'
+        git([url: 'https://github.com/MuhammadAdel612/delpoy.git', branch: 'main'])
       }
     }
     stage('Building image') {
