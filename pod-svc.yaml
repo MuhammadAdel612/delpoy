@@ -15,7 +15,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx
+  name: nginx-lilo
   labels:
     app.kubernetes.io/name: proxy
 spec:
