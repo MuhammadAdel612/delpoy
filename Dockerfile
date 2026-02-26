@@ -1,4 +1,4 @@
-from alpine:latest #usuing alpine cause it is so lightweight
+from alpine:latest
 run apk update
 run apk add nginx 
 run mkdir /tmp/lilo
